@@ -14,6 +14,8 @@ export default defineConfig([
       tseslint.configs.recommended,
       reactHooks.configs['recommended-latest'],
       reactRefresh.configs.vite,
+      // Integrate Prettier to avoid conflicts with stylistic rules
+      'prettier'
     ],
     languageOptions: {
       ecmaVersion: 2020,
